@@ -1,5 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import prose from '@tailwindcss/typography';
+import daisy from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -18,5 +20,52 @@ export default {
         },
     },
 
-    plugins: [forms],
+    darkMode: ['class'],
+
+    plugins: [
+        forms,
+        prose,
+        daisy,
+    ],
+
+    daisyui: {
+        themes: [
+            {
+                dark: {
+                    ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
+                    primary: "#1DA1F2",
+                }
+            },
+            'light',
+            "cupcake",
+            "bumblebee",
+            "emerald",
+            "corporate",
+            "synthwave",
+            "retro",
+            "cyberpunk",
+            "valentine",
+            "halloween",
+            "garden",
+            "forest",
+            "aqua",
+            "lofi",
+            "pastel",
+            "fantasy",
+            "wireframe",
+            "black",
+            "luxury",
+            "dracula",
+            "cmyk",
+            "autumn",
+            "business",
+            "acid",
+            "lemonade",
+            "night",
+            "coffee",
+            "winter",
+        ],
+
+        darkTheme: "cupcake",
+    },
 };
