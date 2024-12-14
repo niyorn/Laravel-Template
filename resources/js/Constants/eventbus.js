@@ -1,0 +1,2 @@
+export const TOAST_SHOWN = 'TOAST_SHOWN';
+export const TOAST_SHOW_ERROR = 'TOAST_SHOW_ERROR';
