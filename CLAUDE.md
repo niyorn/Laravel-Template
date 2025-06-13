@@ -11,6 +11,12 @@ Examples:
 - `sail composer install` (not `composer install`)
 - `sail artisan migrate` (not `php artisan migrate`)
 
+## Commit Messages and Pull Requests
+
+**Do NOT include "Generated with Claude Code" or similar attribution in commit messages or pull request descriptions.**
+
+Keep commit messages and PR descriptions clean and focused on the actual changes made.
+
 ## Development Commands
 
 ### Starting the Development Environment
