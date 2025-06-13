@@ -136,3 +136,24 @@ laravel-template/
 - **HandleInertiaRequests.php**: Middleware that handles Inertia requests
 - **AppServiceProvider.php**: Main service provider for application bootstrapping
 - **.env**: Environment configuration (copy from .env.example)
+
+## Icon Usage
+
+When an icon is needed in Vue components, always use:
+
+```javascript
+import { Icon } from '@iconify/vue';
+```
+
+**Icon Priority:**
+1. **Solar icons** (default) - use `solar:` prefix (e.g., `solar:user-bold`)
+2. **Material icons** (fallback) - use `material-symbols:` prefix (e.g., `material-symbols:person`)
+
+**Example usage** (see `resources/js/Components/generics/BaseButton.vue`):
+```vue
+<Icon 
+  v-if="icon" 
+  :icon="icon" 
+  class="text-2xl" 
+/>
+```
