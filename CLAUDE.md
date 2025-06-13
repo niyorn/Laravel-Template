@@ -65,6 +65,7 @@ This is a Laravel 11 application using **Inertia.js** with **Vue 3** for a moder
 - **Utils**: Custom event bus (`emitter.js`) and fuzzy search implementation
 
 ### Key Technologies
+- **Laravel 12**: Latest framework version with Carbon 3.x and enhanced features
 - **Inertia.js v2**: Handles routing and data flow between Laravel and Vue with async requests and deferred props
 - **Tailwind CSS 4.0**: Recently upgraded utility-first CSS framework
 - **DaisyUI v5**: Component library for Tailwind CSS
